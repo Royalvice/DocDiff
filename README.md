@@ -1,6 +1,6 @@
 # DocDiff
 This is an official implementation for the paper DocDiff: Document Enhancement via Residual Diffusion Models.
-DocDiff can be used directly on other img2img tasks, including natural scene deblurring [<sup>1</sup>](#refer-anchor-1), denosing, inpainting, super resolution [<sup>1</sup>](#refer-anchor-2) and style transfer.
+DocDiff can be used directly on other img2img tasks, including natural scene deblurring [<sup>1</sup>](#refer-anchor-1), denosing, inpainting, super resolution [<sup>2</sup>](#refer-anchor-2) and style transfer.
 
 #References
 <div id="refer-anchor-1"></div>
