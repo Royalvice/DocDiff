@@ -15,7 +15,7 @@
 # 使用指南
 
 无论是训练还是推理，你只需要修改conf.yml中的配置参数，然后运行main.py即可。MODE=1为训练，MODE=0为推理。conf.yml中的参数都有详细注释，你可以根据注释修改参数。文档去模糊预训练权重[Coarse Predictor](https://drive.google.com/file/d/1F9oPOzrjZFd--yzQINZW3heWsewVdaj1/view?usp=sharing)，[Denoiser](https://drive.google.com/file/d/13vkMRRHXDGprXzX1kwGQTI6db7ecol1f/view?usp=sharing)。
-**请注意**conf.yml中的默认参数在文档场景变现最好。如果你想应用DocDiff在自然场景，请先看一下[注意事项!!!](#注意事项!!!)。如果仍有问题，欢迎提issue。
+**请注意**conf.yml中的默认参数在文档场景表现最好。如果你想应用DocDiff在自然场景，请先看一下[注意事项!!!](#注意事项!!!)。如果仍有问题，欢迎提issue。
 
 - 由于要下采样3次，所以输入图像的分辨率必须是8的倍数。如果你的图像不是8的倍数，可以使用padding或者裁剪的方式将图像调整为8的倍数。请不要直接Resize，因为这样会导致图像失真。尤其在去模糊任务中，图像失真会导致模糊程度增加，效果会变得很差。例如，DocDiff使用的文档去模糊数据集[<sup>5</sup>](#refer-anchor-5)分辨率为300\*300，需要先padding到304\*304，再送入推理。
 
