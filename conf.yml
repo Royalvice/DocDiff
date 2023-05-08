@@ -1,0 +1,47 @@
+# model
+IMAGE_SIZE : [304, 304]   # load image size, if it's train mode, it will be randomly cropped to IMAGE_SIZE. If it's test mode, it will be resized to IMAGE_SIZE.
+CHANNEL_X : 3             # input channel
+CHANNEL_Y : 3             # output channel
+TIMESTEPS : 100           # diffusion steps
+SCHEDULE : 'linear'       # linear or cosine
+MODEL_CHANNELS : 32       # basic channels of Unet
+NUM_RESBLOCKS : 1         # number of residual blocks
+CHANNEL_MULT : [1,2,3,4]  # channel multiplier of each layer
+NUM_HEADS : 1
+
+MODE : 1                  # 1 Train, 0 Test
+PRE_ORI : 'True'          # if True, predict $x_0$, else predict $\epsilon$.
+
+
+# train
+PATH_GT : ''              # path of ground truth
+PATH_IMG : ''             # path of input
+BATCH_SIZE : 32           # training batch size
+NUM_WORKERS : 8           # number of workers
+ITERATION_MAX : 1000000   # max training iteration
+LR : 0.0001               # learning rate
+LOSS : 'L2'               # L1 or L2
+EMA_EVERY : 100           # update EMA every EMA_EVERY iterations
+START_EMA : 2000          # start EMA after START_EMA iterations
+SAVE_MODEL_EVERY : 10000  # save model every SAVE_MODEL_EVERY iterations
+EMA: 'True'               # if True, use EMA
+CONTINUE_TRAINING : 'False'               # if True, continue training
+CONTINUE_TRAINING_STEPS : 10000           # continue training from CONTINUE_TRAINING_STEPS
+PRETRAINED_PATH_INITIAL_PREDICTOR : ''    # path of pretrained initial predictor
+PRETRAINED_PATH_DENOISER : ''             # path of pretrained denoiser
+WEIGHT_SAVE_PATH : './checksave'          # path to save model
+TRAINING_PATH : './Training'              # path of training data
+BETA_LOSS : 50            # hyperparameter to balance the pixel loss and the diffusion loss
+HIGH_LOW_FREQ : 'True'    # if True, training with frequency separation
+
+
+# test
+NATIVE_RESOLUTION : 'False'               # if True, test with native resolution
+DPM_SOLVER : 'False'      # if True, test with DPM_solver
+DPM_STEP : 20             # DPM_solver step
+BATCH_SIZE_VAL : 1        # test batch size
+TEST_PATH_GT : '/home/yangzongyuan/Document_Enhancement/BMVC/img'         # path of ground truth
+TEST_PATH_IMG : '/home/yangzongyuan/Document_Enhancement/BMVC/img'        # path of input
+TEST_INITIAL_PREDICTOR_WEIGHT_PATH : '/home/yangzongyuan/Document_Enhancement/DocDiff_3090/checksave/BMVC_WPIXELLOSS_ori_clone_high/model_init_ema_970000.pth'   # path of initial predictor
+TEST_DENOISER_WEIGHT_PATH : '/home/yangzongyuan/Document_Enhancement/DocDiff_3090/checksave/BMVC_WPIXELLOSS_ori_clone_high/model_denoiser_ema_970000.pth'            # path of denoiser
+TEST_IMG_SAVE_PATH : './results'          # path to save results
