@@ -6,9 +6,9 @@
 
 <div align="center">
 
-[简体中文](README.md) | [English](README.EN.md)
+[简体中文](README.md) | [English](README.EN.md) | [Paper](https://arxiv.org/abs/2305.03892v1)
 # DocDiff
-这里是论文DocDiff: Document Enhancement via Residual Diffusion Models的官方复现仓库。DocDiff是一个文档增强模型（详见论文），可以用于文档去模糊、文档去噪、文档二值化、文档去水印和印章等任务。DocDiff是一个轻量级的基于残差预测的扩散模型，在128*128分辨率上以Batchsize=64训练只需要12GB显存。
+这里是论文[DocDiff: Document Enhancement via Residual Diffusion Models](https://arxiv.org/abs/2305.03892v1)的官方复现仓库。DocDiff是一个文档增强模型（详见[论文](https://arxiv.org/abs/2305.03892v1)），可以用于文档去模糊、文档去噪、文档二值化、文档去水印和印章等任务。DocDiff是一个轻量级的基于残差预测的扩散模型，在128*128分辨率上以Batchsize=64训练只需要12GB显存。
 不仅文档增强，DocDiff还可以应用在其他img2img任务上，比如自然场景去模糊[<sup>1</sup>](#refer-anchor-1)，去噪，去雨，超分[<sup>2</sup>](#refer-anchor-2)，图像修复等low-level任务以及语义分割[<sup>4</sup>](#refer-anchor-4)等high-level任务。
 </div>
 
@@ -53,6 +53,14 @@
 - 如果你有任何问题，欢迎提issue，我会尽快回复。
 - 如果你想交流，欢迎给我发邮件**viceyzy@foxmail.com**，备注：**DocDiff**。
 - 如果你愿意将DocDiff作为你的项目的baseline，欢迎引用我们的论文。
+```
+@articlec{yang2023docdiff,
+      title={DocDiff: Document Enhancement via Residual Diffusion Models}, 
+      author={Zongyuan Yang and Baolin Liu and Yongping Xiong and Lan Yi and Guibin Wu and Xiaojun Tang and Ziqi Liu and Junjie Zhou and Xing Zhang},
+      journal={arXiv preprint arXiv:2305.03892},
+      year={2023}
+}
+```
 
 # References
 <div id="refer-anchor-1"></div>
