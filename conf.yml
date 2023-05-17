@@ -40,8 +40,8 @@ NATIVE_RESOLUTION : 'False'               # if True, test with native resolution
 DPM_SOLVER : 'False'      # if True, test with DPM_solver
 DPM_STEP : 20             # DPM_solver step
 BATCH_SIZE_VAL : 1        # test batch size
-TEST_PATH_GT : '/home/yangzongyuan/Document_Enhancement/BMVC/img'         # path of ground truth
-TEST_PATH_IMG : '/home/yangzongyuan/Document_Enhancement/BMVC/img'        # path of input
-TEST_INITIAL_PREDICTOR_WEIGHT_PATH : '/home/yangzongyuan/Document_Enhancement/DocDiff_3090/checksave/BMVC_WPIXELLOSS_ori_clone_high/model_init_ema_970000.pth'   # path of initial predictor
-TEST_DENOISER_WEIGHT_PATH : '/home/yangzongyuan/Document_Enhancement/DocDiff_3090/checksave/BMVC_WPIXELLOSS_ori_clone_high/model_denoiser_ema_970000.pth'            # path of denoiser
+TEST_PATH_GT : ''         # path of ground truth
+TEST_PATH_IMG : ''        # path of input
+TEST_INITIAL_PREDICTOR_WEIGHT_PATH : ''   # path of initial predictor
+TEST_DENOISER_WEIGHT_PATH : ''            # path of denoiser
 TEST_IMG_SAVE_PATH : './results'          # path to save results
