@@ -1,6 +1,6 @@
 <div align="center">
 
- <img width="100%" src="./demo_img/teaser.png">
+ <img width="100%" src="demo/teaser.png">
 
 </div>
 
@@ -42,9 +42,6 @@
 - [x] 添加推理代码
 - [x] 上传预训练模型
 - [x] 使用DPM_solver减少推理步长（实际用起来，效果一般）
-- [ ] 添加评估代码
-- [ ] 添加水印合成代码
-- [ ] 上传印章掩膜
 - [ ] 多GPU训练
 - [ ] DDIM的跳步采样
 - [ ] 使用深度可分离卷积压缩模型

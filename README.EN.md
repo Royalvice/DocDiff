@@ -1,6 +1,6 @@
 <div align="center">
 
- <img width="100%" src="./demo_img/teaser.png">
+ <img width="100%" src="demo/teaser.png">
 
 </div>
 
@@ -44,9 +44,6 @@ Please note that the default parameters in `conf.yml` work best for document sce
 - [x] Add inference code
 - [x] Upload pre-trained model
 - [x] Use DPM_solver to reduce inference step size (although the effect is not significant in practice)
-- [ ] Add evaluation code
-- [ ] Add watermarking code
-- [ ] Upload seal masks
 - [ ] Train on multiple GPUs
 - [ ] Jump-step sampling for DDIM
 - [ ] Use depth separable convolution to compress the model
