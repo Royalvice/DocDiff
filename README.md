@@ -12,6 +12,11 @@
 不仅文档增强，DocDiff还可以应用在其他img2img任务上，比如自然场景去模糊[<sup>1</sup>](#refer-anchor-1)，去噪，去雨，超分[<sup>2</sup>](#refer-anchor-2)，图像修复等low-level任务以及语义分割[<sup>4</sup>](#refer-anchor-4)等high-level任务。
 </div>
 
+# News
+
+- 2023.05.08: 代码的初始版本已经上传。请查看To-do lists来获取未来的更新。
+- 2023.06.13: 为了方便复现，已上传推理笔记本`demo/inference.ipynb`和预训练模型`checksave/`。
+- 
 # 使用指南
 
 无论是训练还是推理，你只需要修改conf.yml中的配置参数，然后运行main.py即可。MODE=1为训练，MODE=0为推理。conf.yml中的参数都有详细注释，你可以根据注释修改参数。文档去模糊预训练权重[Coarse Predictor](https://drive.google.com/file/d/1F9oPOzrjZFd--yzQINZW3heWsewVdaj1/view?usp=sharing)，[Denoiser](https://drive.google.com/file/d/13vkMRRHXDGprXzX1kwGQTI6db7ecol1f/view?usp=sharing)。
@@ -42,6 +47,7 @@
 - [x] 添加推理代码
 - [x] 上传预训练模型
 - [x] 使用DPM_solver减少推理步长（实际用起来，效果一般）
+- [x] 上传Inference notebook，方便复现
 - [ ] 多GPU训练
 - [ ] DDIM的跳步采样
 - [ ] 使用深度可分离卷积压缩模型

@@ -13,9 +13,14 @@ This is the official repository for the paper [DocDiff: Document Enhancement via
 Not only for document enhancement, DocDiff can also be used for other img2img tasks, such as natural scene deblurring[<sup>1</sup>](#refer-anchor-1), denoising, rain removal, super-resolution[<sup>2</sup>](#refer-anchor-2), image inpainting, as well as high-level tasks such as semantic segmentation[<sup>4</sup>](#refer-anchor-4).
 </div>
 
+# News
+
+- 2023.05.08: The initial version of the code is uploaded. Please check the to-do list for future updates.
+- 2023.06.13: The inference notebook `demo/inference.ipynb` is uploaded for convenient reproduction and pretrained models `checksave/` are uploaded.
+
 # Guide
 
-Whether it's for training or inference, you just need to modify the configuration parameters in `conf.yml` and run `main.py`. MODE=1 is for training, MODE=0 is for inference. The parameters in `conf.yml` have detailed annotations, so you can modify them as needed. Pre-trained weights for document deblurring Coarse Predictor and Denoiser can be found [here](https://drive.google.com/file/d/1F9oPOzrjZFd--yzQINZW3heWsewVdaj1/view?usp=sharing) and [here](https://drive.google.com/file/d/13vkMRRHXDGprXzX1kwGQTI6db7ecol1f/view?usp=sharing), respectively.
+Whether it's for training or inference, you just need to modify the configuration parameters in `conf.yml` and run `main.py`. MODE=1 is for training, MODE=0 is for inference. The parameters in `conf.yml` have detailed annotations, so you can modify them as needed. Pre-trained weights for document deblurring Coarse Predictor and Denoiser can be found in `checksave/`, respectively.
 
 Please note that the default parameters in `conf.yml` work best for document scenarios. If you want to apply DocDiff to natural scenes, please first read [Notes!](#notes!) carefully. If you still have issues, welcome to submit an issue.
 
@@ -44,6 +49,7 @@ Please note that the default parameters in `conf.yml` work best for document sce
 - [x] Add inference code
 - [x] Upload pre-trained model
 - [x] Use DPM_solver to reduce inference step size (although the effect is not significant in practice)
+- [x] Uploaded the inference notebook for convenient reproduction
 - [ ] Train on multiple GPUs
 - [ ] Jump-step sampling for DDIM
 - [ ] Use depth separable convolution to compress the model
