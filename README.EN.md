@@ -15,8 +15,9 @@ Not only for document enhancement, DocDiff can also be used for other img2img ta
 
 # News
 
-- 2023.05.08: The initial version of the code is uploaded. Please check the to-do list for future updates.
+- 2023.08.01: Congratulations! DocDiff has been accepted by ACM Multimedia 2023!
 - 2023.06.13: The inference notebook `demo/inference.ipynb` is uploaded for convenient reproduction and pretrained models `checksave/` are uploaded.
+- 2023.05.08: The initial version of the code is uploaded. Please check the to-do list for future updates.
 
 # Guide
 
