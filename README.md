@@ -14,6 +14,8 @@
 
 # News
 
+- 2023.08.03: 介绍一款我们实验室开发的多功能且多平台的[OCR软件](https://www.aibupt.com/)。其中包含了DocDiff的自动去除水印和印章的功能（自动去除水印功能即将上线）。同样包含常用的各种OCR功能，例如PDF转word，PDF转excel，公式识别，表格识别。欢迎试用！
+- 2023.08.02: H-DIBCO 2018 [<sup>6</sup>](#refer-anchor-6) 和 DIBCO 2019 [<sup>7</sup>](#refer-anchor-7) 的文档二值化结果已经上传。[Google Drive](https://drive.google.com/drive/folders/1gT8PFnfW0qFbFmWX6ReQntfFr9POVtYR?usp=sharing)
 - 2023.08.01: 祝贺！DocDiff被ACM Multimedia 2023接收！
 - 2023.06.13: 为了方便复现，已上传推理笔记本`demo/inference.ipynb`和预训练模型`checksave/`。
 - 2023.05.08: 代码的初始版本已经上传。请查看To-do lists来获取未来的更新。
@@ -90,3 +92,11 @@
 <div id="refer-anchor-5"></div>
 
 - [5] Michal Hradiš, Jan Kotera, Pavel Zemčík and Filip Šroubek. Convolutional Neural Networks for Direct Text Deblurring. In Xianghua Xie, Mark W. Jones, and Gary K. L. Tam, editors, Proceedings of the British Machine Vision Conference (BMVC), pages 6.1-6.13. BMVA Press, September 2015.
+
+<div id="refer-anchor-6"></div>
+
+- [6] I. Pratikakis, K. Zagori, P. Kaddas and B. Gatos, "ICFHR 2018 Competition on Handwritten Document Image Binarization (H-DIBCO 2018)," 2018 16th International Conference on Frontiers in Handwriting Recognition (ICFHR), Niagara Falls, NY, USA, 2018, pp. 489-493, doi: 10.1109/ICFHR-2018.2018.00091.
+
+<div id="refer-anchor-7"></div>
+
+- [7] I. Pratikakis, K. Zagoris, X. Karagiannis, L. Tsochatzidis, T. Mondal and I. Marthot-Santaniello, "ICDAR 2019 Competition on Document Image Binarization (DIBCO 2019)," 2019 International Conference on Document Analysis and Recognition (ICDAR), Sydney, NSW, Australia, 2019, pp. 1547-1556, doi: 10.1109/ICDAR.2019.00249.

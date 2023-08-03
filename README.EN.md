@@ -15,6 +15,8 @@ Not only for document enhancement, DocDiff can also be used for other img2img ta
 
 # News
 
+- 2023.08.03: Introducing our laboratory-developed versatile and cross-platform [OCR software](https://www.aibupt.com/). It includes the automatic removal of watermarks and stamps using DocDiff (automatic watermark removal feature coming soon). It also encompasses various commonly used OCR functions such as PDF to Word conversion, PDF to Excel conversion, formula recognition, and table recognition. Feel free to give it a try!
+- 2023.08.02: Document binarization results for H-DIBCO 2018 [<sup>6</sup>](#refer-anchor-6) and DIBCO 2019 [<sup>7</sup>](#refer-anchor-7) have been uploaded. You can access them in the [Google Drive](https://drive.google.com/drive/folders/1gT8PFnfW0qFbFmWX6ReQntfFr9POVtYR?usp=sharing)
 - 2023.08.01: Congratulations! DocDiff has been accepted by ACM Multimedia 2023!
 - 2023.06.13: The inference notebook `demo/inference.ipynb` is uploaded for convenient reproduction and pretrained models `checksave/` are uploaded.
 - 2023.05.08: The initial version of the code is uploaded. Please check the to-do list for future updates.
