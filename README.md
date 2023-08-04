@@ -14,7 +14,7 @@
 
 # News
 
-- 2023.08.03: 介绍一款我们实验室开发的多功能且多平台的[**OCR软件**](https://www.aibupt.com/)。**其中包含了DocDiff的自动去除水印和印章的功能（自动去除水印功能即将上线）**。同样包含常用的各种OCR功能，例如PDF转word，PDF转excel，公式识别，表格识别。欢迎试用！
+- **置顶**: 介绍一款我们实验室开发的多功能且多平台的[**OCR软件**](https://www.aibupt.com/)。**其中包含了DocDiff的自动去除水印和印章的功能（自动去除水印功能即将上线）**。同样包含常用的各种OCR功能，例如PDF转word，PDF转excel，公式识别，表格识别。欢迎试用！
 - 2023.08.02: H-DIBCO 2018 [<sup>6</sup>](#refer-anchor-6) 和 DIBCO 2019 [<sup>7</sup>](#refer-anchor-7) 的文档二值化结果已经上传。[Google Drive](https://drive.google.com/drive/folders/1gT8PFnfW0qFbFmWX6ReQntfFr9POVtYR?usp=sharing)
 - 2023.08.01: **祝贺！DocDiff被ACM Multimedia 2023接收！**
 - 2023.06.13: 为了方便复现，已上传推理笔记本`demo/inference.ipynb`和预训练模型`checksave/`。
