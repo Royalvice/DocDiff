@@ -59,6 +59,10 @@ Please note that the default parameters in `conf.yml` work best for document sce
 - [ ] Use depth separable convolution to compress the model
 - [ ] Train the model on natural scenes and provide results and pre-trained models
 
+# Stars over time
+
+[![Stargazers over time](https://starchart.cc/Royalvice/DocDiff.svg)](https://starchart.cc/Royalvice/DocDiff)
+
 # Acknowledgement
 
 - If you find DocDiff helpful, please give us a star. Thank you! 🤞😘

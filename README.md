@@ -57,6 +57,10 @@
 - [ ] 使用深度可分离卷积压缩模型
 - [ ] 在自然场景上训练模型并提供结果和预训练模型
 
+# Stars over time
+
+[![Stargazers over time](https://starchart.cc/Royalvice/DocDiff.svg)](https://starchart.cc/Royalvice/DocDiff)
+
 # 感谢
 
 - 如果你觉得DocDiff对你有帮助，请给个star，谢谢！🤞😘
