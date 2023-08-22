@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[简体中文](README.md) | [English](README.EN.md) | [Paper](https://arxiv.org/abs/2305.03892v1)
+[简体中文](README.md) | [English](README.EN.md) | [Paper](https://arxiv.org/abs/2305.03892v2)
 # DocDiff
 This is the official repository for the paper [DocDiff: Document Enhancement via Residual Diffusion Models](https://arxiv.org/abs/2305.03892v1). DocDiff is a document enhancement model (please refer to the [paper](https://arxiv.org/abs/2305.03892v1)) that can be used for tasks such as document deblurring, denoising, binarization, watermark and stamp removal, etc. DocDiff is a lightweight residual prediction-based diffusion model, that can be trained on a batch size of 64 with only 12GB of VRAM at a resolution of 128*128.
 
