@@ -1,5 +1,5 @@
 # model
-IMAGE_SIZE : [304, 304]   # load image size, if it's train mode, it will be randomly cropped to IMAGE_SIZE. If it's test mode, it will be resized to IMAGE_SIZE.
+IMAGE_SIZE : [128, 128]   # load image size, if it's train mode, it will be randomly cropped to IMAGE_SIZE. If it's test mode, it will be resized to IMAGE_SIZE.
 CHANNEL_X : 3             # input channel
 CHANNEL_Y : 3             # output channel
 TIMESTEPS : 100           # diffusion steps
@@ -17,7 +17,7 @@ PRE_ORI : 'True'          # if True, predict $x_0$, else predict $\epsilon$.
 PATH_GT : ''              # path of ground truth
 PATH_IMG : ''             # path of input
 BATCH_SIZE : 32           # training batch size
-NUM_WORKERS : 8           # number of workers
+NUM_WORKERS : 16           # number of workers
 ITERATION_MAX : 1000000   # max training iteration
 LR : 0.0001               # learning rate
 LOSS : 'L2'               # L1 or L2
