@@ -16,6 +16,7 @@ Not only for document enhancement, DocDiff can also be used for other img2img ta
 # News
 
 - **Pinned**: Introducing our laboratory-developed versatile and cross-platform [**OCR software**](https://www.aibupt.com/). **It includes the automatic removal of watermarks and stamps using DocDiff (automatic watermark removal feature coming soon)**. It also encompasses various commonly used OCR functions such as PDF to Word conversion, PDF to Excel conversion, formula recognition, and table recognition. Feel free to give it a try!
+- 2023.09.14: Uploaded watermark synthesis code `utils/marker.py` and seal dataset. [Seal dataset Google Drive](https://drive.google.com/file/d/125SgEmHFUIzDexsrj2d3yMJdYMVhovti/view?usp=sharing)
 - 2023.08.02: Document binarization results for H-DIBCO 2018 [<sup>6</sup>](#refer-anchor-6) and DIBCO 2019 [<sup>7</sup>](#refer-anchor-7) have been uploaded. You can access them in the [Google Drive](https://drive.google.com/drive/folders/1gT8PFnfW0qFbFmWX6ReQntfFr9POVtYR?usp=sharing)
 - 2023.08.01: **Congratulations! DocDiff has been accepted by ACM Multimedia 2023!**
 - 2023.06.13: The inference notebook `demo/inference.ipynb` is uploaded for convenient reproduction and pretrained models `checksave/` are uploaded.
@@ -35,6 +36,15 @@ Please note that the default parameters in `conf.yml` work best for document sce
 - pytorch >= 1.7.0
 - torchvision >= 0.8.0
 
+## Watermark Synthesis and Seal Dataset
+
+We provide watermark synthesis code `utils/marker.py` and a stamp dataset. [Seal dataset Google Drive](https://drive.google.com/file/d/125SgEmHFUIzDexsrj2d3yMJdYMVhovti/view?usp=sharing). Since the document background images used are our internal data, we did not provide the background images. If you want to use the watermark synthesis code, you need to find some document background images yourself. The watermark synthesis code is implemented based on OpenCV, so you need to install OpenCV.
+
+### Seal Dataset
+
+The Seal Dataset belongs to the [DocDiff project](https://github.com/Royalvice/DocDiff). It contains 1597 red seals in Chinese scenes, along with their corresponding binary masks. These seal data can be used for tasks such as seal synthesis and seal removal. Due to limited manpower, it is extremely difficult to extract seals from document images, so some seal images may contain noise. Most of the original seal
+images in the dataset are from the ICDAR 2023 Competition on Reading the Seal Title ([https://rrc.cvc.uab.es/?ch=20](https://rrc.cvc.uab.es/?ch=20)) dataset, and a few are from our internal images. If you find this dataset helpful, please give our [project](https://github.com/Royalvice/DocDiff) a free star, thank you!!!
+
 <div align="center">
 
 # Notes!
@@ -51,6 +61,7 @@ Please note that the default parameters in `conf.yml` work best for document sce
 - [x] Add training code
 - [x] Add inference code
 - [x] Upload pre-trained model
+- [x] Upload watermark synthesis code and seal dataset.
 - [x] Use DPM_solver to reduce inference step size (although the effect is not significant in practice)
 - [x] Uploaded the inference notebook for convenient reproduction
 - [ ] Synthesize document datasets with more noise, such as salt-and-pepper noise and noise generated from compression.

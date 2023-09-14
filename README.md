@@ -15,6 +15,7 @@
 # News
 
 - **置顶**: 介绍一款我们实验室开发的多功能且多平台的[**OCR软件**](https://www.aibupt.com/)。**其中包含了DocDiff的自动去除水印和印章的功能（自动去除水印功能即将上线）**。同样包含常用的各种OCR功能，例如PDF转word，PDF转excel，公式识别，表格识别。欢迎试用！
+- 2023.09.14: 上传了水印合成代码`utils/marker.py`和印章数据集。[印章数据集Google Drive](https://drive.google.com/file/d/125SgEmHFUIzDexsrj2d3yMJdYMVhovti/view?usp=sharing)
 - 2023.08.02: H-DIBCO 2018 [<sup>6</sup>](#refer-anchor-6) 和 DIBCO 2019 [<sup>7</sup>](#refer-anchor-7) 的文档二值化结果已经上传。[Google Drive](https://drive.google.com/drive/folders/1gT8PFnfW0qFbFmWX6ReQntfFr9POVtYR?usp=sharing)
 - 2023.08.01: **祝贺！DocDiff被ACM Multimedia 2023接收！**
 - 2023.06.13: 为了方便复现，已上传推理笔记本`demo/inference.ipynb`和预训练模型`checksave/`。
@@ -33,6 +34,13 @@
 - pytorch >= 1.7.0
 - torchvision >= 0.8.0
 
+## 水印合成与印章数据集
+
+我们提供了水印合成代码`utils/marker.py`和印章数据集。[印章数据集Google Drive](https://drive.google.com/file/d/125SgEmHFUIzDexsrj2d3yMJdYMVhovti/view?usp=sharing)。由于使用的文档背景图像是我们内部的数据，所以我们没有提供背景图片。如果你想使用水印合成代码，你需要自己找一些文档背景图像。水印合成代码是基于OpenCV实现的，所以你需要安装OpenCV。
+
+### 印章数据集
+
+印章数据集隶属于[DocDiff项目](https://github.com/Royalvice/DocDiff)，其中包含1597个中文场景下的红色系印章以及它们对应的二值化的掩膜，这些印章数据可以用于印章合成、印章消除等等任务中。由于人力有限，而从文档图片中抠出来印章是极其困难的事情，所以某些印章图片中包含一些噪声。数据集中的原始印章图片大部分来自于ICDAR 2023 Competition on Reading the Seal Title([https://rrc.cvc.uab.es/?ch=20](https://rrc.cvc.uab.es/?ch=20))数据集，少部分来自于我们自己内部的图片。如果您觉得这份数据集对您有帮助，请给我们的[项目](https://github.com/Royalvice/DocDiff)一个免费的star，谢谢！！！
 
 <div align="center">
 
@@ -49,6 +57,7 @@
 - [x] 添加训练代码
 - [x] 添加推理代码
 - [x] 上传预训练模型
+- [x] 上传水印合成代码和印章数据集
 - [x] 使用DPM_solver减少推理步长（实际用起来，效果一般）
 - [x] 上传Inference notebook，方便复现
 - [ ] 合成包含更多噪声的文档数据集(比如椒盐噪声，压缩产生的噪声)
