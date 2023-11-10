@@ -6,9 +6,9 @@
 
 <div align="center">
 
-[简体中文](README.md) | [English](README.EN.md) | [Paper](https://arxiv.org/abs/2305.03892v2)
+[简体中文](README.md) | [English](README.EN.md) | [Paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611730)
 # DocDiff
-This is the official repository for the paper [DocDiff: Document Enhancement via Residual Diffusion Models](https://arxiv.org/abs/2305.03892v1). DocDiff is a document enhancement model (please refer to the [paper](https://arxiv.org/abs/2305.03892v1)) that can be used for tasks such as document deblurring, denoising, binarization, watermark and stamp removal, etc. DocDiff is a lightweight residual prediction-based diffusion model, that can be trained on a batch size of 64 with only 12GB of VRAM at a resolution of 128*128.
+This is the official repository for the paper [DocDiff: Document Enhancement via Residual Diffusion Models](https://dl.acm.org/doi/abs/10.1145/3581783.3611730). DocDiff is a document enhancement model (please refer to the [paper](https://arxiv.org/abs/2305.03892v1)) that can be used for tasks such as document deblurring, denoising, binarization, watermark and stamp removal, etc. DocDiff is a lightweight residual prediction-based diffusion model, that can be trained on a batch size of 64 with only 12GB of VRAM at a resolution of 128*128.
 
 Not only for document enhancement, DocDiff can also be used for other img2img tasks, such as natural scene deblurring[<sup>1</sup>](#refer-anchor-1), denoising, rain removal, super-resolution[<sup>2</sup>](#refer-anchor-2), image inpainting, as well as high-level tasks such as semantic segmentation[<sup>4</sup>](#refer-anchor-4).
 </div>
