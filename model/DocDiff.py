@@ -8,7 +8,7 @@ from src.sobel import Sobel, Laplacian
 
 class Swish(nn.Module):
     """
-    ### Swish actiavation function
+    ### Swish activation function
     $$x \cdot \sigma(x)$$
     """
 
