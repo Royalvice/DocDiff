@@ -81,11 +81,12 @@ images in the dataset are from the ICDAR 2023 Competition on Reading the Seal Ti
 - If you want to communicate with us, please send an email to **viceyzy@foxmail.com** with the subject "**DocDiff**".
 - If you want to use DocDiff as the baseline for your project, please cite our paper.
 ```
-@articlec{yang2023docdiff,
-      title={DocDiff: Document Enhancement via Residual Diffusion Models}, 
-      author={Zongyuan Yang and Baolin Liu and Yongping Xiong and Lan Yi and Guibin Wu and Xiaojun Tang and Ziqi Liu and Junjie Zhou and Xing Zhang},
-      journal={arXiv preprint arXiv:2305.03892},
-      year={2023}
+@inproceedings{yang2023docdiff,
+  title={DocDiff: Document Enhancement via Residual Diffusion Models},
+  author={Yang, Zongyuan and Liu, Baolin and Xxiong, Yongping and Yi, Lan and Wu, Guibin and Tang, Xiaojun and Liu, Ziqi and Zhou, Junjie and Zhang, Xing},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={2795--2806},
+  year={2023}
 }
 ```
 
