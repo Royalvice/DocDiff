@@ -7,6 +7,9 @@
 <div align="center">
 
 [简体中文](README.md) | [English](README.EN.md) | [Paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611730)
+
+[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FRoyalvice%2FDocDiff&countColor=%23d9e3f0)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FRoyalvice%2FDocDiff)
+
 # DocDiff
 这里是论文[DocDiff: Document Enhancement via Residual Diffusion Models](https://dl.acm.org/doi/abs/10.1145/3581783.3611730)的官方复现仓库。DocDiff是一个文档增强模型（详见[论文](https://arxiv.org/abs/2305.03892v1)），可以用于文档去模糊、文档去噪、文档二值化、文档去水印和印章等任务。DocDiff是一个轻量级的基于残差预测的扩散模型，在128*128分辨率上以Batchsize=64训练只需要12GB显存。
 不仅文档增强，DocDiff还可以应用在其他img2img任务上，比如自然场景去模糊[<sup>1</sup>](#refer-anchor-1)，去噪，去雨，超分[<sup>2</sup>](#refer-anchor-2)，图像修复等low-level任务以及语义分割[<sup>4</sup>](#refer-anchor-4)等high-level任务。
